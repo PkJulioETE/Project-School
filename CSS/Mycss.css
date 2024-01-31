@@ -1,0 +1,91 @@
+:root {
+  --gradient-header: linear-gradient(
+    90deg,
+    rgba(3, 2, 28, 0.459) 0%,
+    rgb(98, 98, 202) 38%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  --gradient-card: linear-gradient(
+    90deg,
+    rgba(25, 23, 85, 0.459) 0%,
+    rgb(98, 98, 202) 38%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  --gradient-btn-pagar: linear-gradient(
+    90deg,
+    rgb(41, 209, 7) 0%,
+    rgb(120, 190, 120) 46%,
+    rgba(42, 161, 12, 0.685) 100%
+  );
+  --gradient-btn-provas: linear-gradient(
+    90deg,
+    rgb(31, 176, 60) 0%,
+    rgb(13, 112, 13) 46%,
+    rgb(8, 163, 55) 100%
+  );
+  --white: #fff;
+  --gradient-btn-provas2: linear-gradient(
+    90deg,
+    rgb(194, 196, 164) 0%,
+    rgb(192, 147, 0) 46%,
+    rgb(235, 224, 189) 100%
+  );
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+  overflow-y: visible;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  width: 100vw;
+  height: auto;
+}
+
+.d_fcc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d_fcs {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.d_fsc {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.d_fss {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.d_fc {
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}

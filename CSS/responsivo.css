@@ -1,0 +1,165 @@
+/*Para definir largura*/
+@media screen and (max-width: 400px) {
+  /*dispositivos móveis pequenos*/
+
+  .tela-pai {
+    height: 1600px;
+  }
+
+  .tela-pai .tela_one:first-child {
+    height: 740px;
+  }
+
+  .image-tela {
+    flex-direction: column;
+    height: 740px;
+    justify-content: start;
+  }
+
+  .ct-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .ct-right {
+    display: none;
+  }
+
+  .titulo-apresentacao {
+    font-size: 1.5rem;
+  }
+
+  .linha-apresentacao {
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .texto-apresentacao {
+    max-width: 95%;
+    height: auto;
+    padding: 2px;
+    background-color: rgba(240, 248, 255, 0.074);
+    color: rgba(247, 244, 244, 0.853);
+    margin-top: 50px;
+    overflow-y: auto;
+  }
+
+  .botao-apresentacao {
+    margin-top: 70px;
+    width: 250px;
+    border-radius: 30px;
+  }
+
+  .tela_two .fundo {
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    overflow-x: auto;
+    justify-content: start;
+    padding: 0 2px;
+  }
+
+  .tela_two .fundo-pai {
+  }
+
+  .bx-one,
+  .bx-two,
+  .bx-tree {
+    min-width: 290px;
+    height: 95%;
+    background-color: rgba(33, 32, 32, 0.871);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 4px;
+  }
+
+  .titulo-box {
+    padding: 2px;
+    width: auto;
+    color: #fff;
+    font-size: 2.2rem;
+    margin-top: 20px;
+  }
+
+  .texto-box {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    width: 80%;
+    height: auto;
+    padding: 1px;
+    overflow-y: auto;
+    color: #e5d9d9e2;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  .ct-criadores {
+    width: auto;
+    overflow-x: auto;
+    justify-content: start;
+    padding: 0px 1px;
+    border-radius: 0%;
+  }
+
+  .cards {
+    width: 280px;
+    height: 370px;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  /*dispositivos móveis*/
+
+  .image-tela {
+    flex-direction: column;
+  }
+
+  .ct-left {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .titulo-apresentacao {
+    font-size: 1.5rem;
+  }
+
+  .linha-apresentacao {
+    width: 150px;
+  }
+
+  .texto-apresentacao {
+    width: 95%;
+    height: auto;
+    padding: 2px;
+    background-color: rgba(240, 248, 255, 0.074);
+    color: rgba(247, 244, 244, 0.853);
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  /*iPads, tablets*/
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /*telas pequenas, laptops*/
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  /*laptops, telas médias*/
+}
+
+@media screen and (min-width: 1201px) {
+  /*telas grandes, TVs*/
+}

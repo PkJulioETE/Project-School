@@ -1,0 +1,177 @@
+:root {
+  --gradient-header: linear-gradient(
+    90deg,
+    rgba(205, 158, 14, 0.767) 0%,
+    rgb(98, 98, 202) 38%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  --gradient-btn-pagar: linear-gradient(
+    90deg,
+    rgb(41, 209, 7) 0%,
+    rgb(38, 185, 38) 46%,
+    rgb(99, 189, 36) 100%
+  );
+  --white: #fff;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: var(--gradient-header);
+}
+
+.fundo {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 171, 16, 0.696);
+  justify-content: space-between;
+}
+
+.box_left {
+  width: auto;
+  padding: 0px 40px;
+  height: 100%;
+}
+
+.logo {
+  color: #fcfcfc;
+  font-size: 1.6rem;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #000000;
+}
+
+.box_center {
+  width: 60%;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.itens {
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  font-family: Tahoma, sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.itens:hover {
+  color: rgb(255, 174, 0);
+  transform: translateY(-3px);
+  transition: all 0.5s;
+}
+
+.box_right {
+  width: auto;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 10px 20px;
+}
+
+.icon-right {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(19, 57, 99, 0.765);
+  color: #fff;
+  border-radius: 50%;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.icon-right:hover {
+  color: #e19b0e;
+  transition: all 0.3s;
+}
+
+footer {
+  width: 100%;
+  height: 270px;
+  background-color: #e19b0e;
+}
+
+/*Responsivo*/
+
+/* Responsivo para dispositivos móveis */
+@media screen and (max-width: 767px) {
+  .box_left {
+    order: -1;
+    padding: 0 10px;
+  }
+
+  .box_center {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--gradient-header);
+    z-index: 1;
+  }
+
+  .box_center.active {
+    display: flex;
+  }
+
+  .itens {
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+
+  .itens:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .box_right {
+    order: 1;
+    display: none;
+  }
+
+  .icon-right {
+    margin: 0 5px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  /* Adicionando estilos definidos no "Mycss" */
+  .d_fcc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .d_fcs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .d_fsc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .d_fss {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .d_fc {
+    display: flex;
+    align-items: center;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+}
